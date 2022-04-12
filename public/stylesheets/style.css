@@ -1,8 +1,28 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
 a {
-  color: #00B7FF;
+  color: black;
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 0;
+}
+main {
+  background-color: #d2ccb7;
+}
+#projects {
+  background-color: #e5e2d9;
+}
+#contact {
+  background-color: #efece4;
+}
+.img-project {
+  filter: grayscale(100%);
+}
+.img-project:hover {
+  filter: none;
+}
+
+#body {
+  font-family: 'Prata', serif;
 }

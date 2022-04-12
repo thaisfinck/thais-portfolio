@@ -1,70 +1,105 @@
-<nav id="navbar">
-  <a href="#welcome-section">Get to know me</a>
-  <a href="#projects">Chek out my work</a>
-    <a href="#contact">Contact me</a>
-</nav>
-<section id="welcome-section">
-  <h1>I guess I have a Portfolio now</h1>
-    <p>
-        Hello, I am Thais. I am a web developer from Brazil. I have been working as a web developer for over a year now.
-        I have a passion for programming and I am always looking for new challenges. </p>
-        
-</section>
-<section id="projects">
-    <a href="https://viveiro.herokuapp.com/" target="_blank">
-        <div class="card mb-3" style="width: 90%;">
+<main class="container position-relative" style="height: 50vh;">
+    <section id="welcome-section">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <h1>I guess I have a Portfolio now</h1>
+            <p><em>
+                Hello, I am Thais. I am a web developer from Brazil. I have been working as a web developer for over a year now.
+                I have a passion for programming and I am always looking for new challenges. 
+            </em></p>
+        </div>
+    </section>
+    <section class="position-absolute top-100 start-50 translate-middle">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarCenteredExample"
+                    aria-controls="navbarCenteredExample"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-center container"
+                >
+                    <div class="navbar-nav row">
+                        <div class="nav-item text-center col" style="width: 18rem;">
+                        <a class="nav-link active border border-secondary" aria-current="page" href="#welcome-section">about me</a>
+                        </div>
+                        <div class="nav-item text-center col" style="width: 18rem;">
+                        <a class="nav-link active border border-secondary" href="#projects">about my work</a>
+                        </div>
+                        <div class="nav-item text-center col" style="width: 18rem;">
+                        <a class="nav-link active border border-secondary" href="#contact">contact me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+</main>
+<section class="container" id="projects">
+    <div class="p-5">
+        <div class="card mb-3 mt-3 bg-transparent border-0" >
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="images/viveiro.png" pngclass="img-fluid rounded-start" alt="..." style="width: 100%;">
+                    <a href="https://viveiro.herokuapp.com/" target="_blank">
+                        <img src="images/viveiro.png" pngclass="img-fluid rounded-start" alt="..." style="width: 100%;" class="img-project">
+                    </a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Project 0</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title"><em>Viveiro Agriflorestal Website <small>(pt-br)</small></em></h5>
+                        <p class="card-text">This was a website that I have created for a plant nursery in Brazil.<br/>
+                            For this project I used ReactJs, Bootstraap and the EmailJs API.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </a>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col project-tile">
-                <a href="https://relative-path.vercel.app/" target="_blank">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/relative.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">My final project in a Web Developers Bootcamp </p>
-                        </div>
+            <div class="col project-tile ps-5 pb-5">
+                <div class="card bg-transparent border-0" style="width: 18rem;">
+                    <a href="https://relative-path.vercel.app/" target="_blank">
+                        <img src="images/relative.png" class="card-img-top img-project" alt="..." style="height: 10rem">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text"><em>My final project in a Web Developers Bootcamp</em></p>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="col project-tile">
-                <a href="https://airbnb-thais.herokuapp.com/houses" target="_blank">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/airbnb.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">My first Full Stack Project </p>
-                        </div>
+            <div class="col project-tile ps-5 pb-5">
+                <div class="card bg-transparent border-0" style="width: 18rem;">
+                    <a href="https://airbnb-thais.herokuapp.com/houses" target="_blank">
+                        <img src="images/airbnb.png" class="card-img-top img-project" alt="..." style="height: 10rem">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text"><em>My first Full Stack Project</em></p>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="col project-tile">
-                <a href="https://codepen.io/your-work/" target="_blank">
-                    <div class="card" style="width: 18rem;">
-                        <img src="images/freecodecamp.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some of my FreeCodeCamp Projects </p>
-                        </div>
+            <div class="col project-tile ps-5 pb-5">
+                <div class="card bg-transparent border-0" style="width: 18rem;">
+                    <a href="https://codepen.io/your-work/" target="_blank">
+                        <img src="images/freecodecamp.png" class="card-img-top img-project" alt="..." style="height: 10rem">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text"><em>Some of my FreeCodeCamp Projects</em></p>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<footer id="contact">
-    <h1>Contact me</h1>
-    <a href="https://github.com/thaisfinck" id="profile-link" target="_blank">Github</a>
-    <a href="https://www.linkedin.com/in/thaisfinck/?locale=en_US" id="profile-link" target="_blank">Linkedin</a>
-    <a href="#" id="profile-link">Email</a>
+<footer class="container position-relative" id="contact" style="height: 50vh;">
+    <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <h1 >Contact me</h1>
+        <a class="link-dark text-decoration-none" href="https://github.com/thaisfinck" id="profile-link" target="_blank">Github</a>
+        <a class="link-dark text-decoration-none" href="https://www.linkedin.com/in/thaisfinck/?locale=en_US" id="profile-link" target="_blank">Linkedin</a>
+        <a class="link-dark text-decoration-none" href="#" id="profile-link">Email</a>
+    </div>
 </footer>
