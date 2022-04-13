@@ -1,3 +1,3 @@
- Current running version (en)
+📟 Current running version (en)
 
-🟤 horeku - deployment: https://thais-portfolio.herokuapp.com/
+horeku - deployment: https://thais-portfolio.herokuapp.com/
