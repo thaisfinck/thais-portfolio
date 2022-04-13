@@ -30,3 +30,11 @@ main {
 #body {
   font-family: 'Prata', serif;
 }
+
+i {
+  font-size: 1.5em;
+}
+
+.profile-link:hover {
+  transform: scale(1.1);
+}
